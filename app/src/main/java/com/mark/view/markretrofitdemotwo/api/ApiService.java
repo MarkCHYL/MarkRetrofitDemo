@@ -1,6 +1,12 @@
 package com.mark.view.markretrofitdemotwo.api;
 
-import com.mark.view.markretrofitdemotwo.bean.*;
+
+import com.mark.view.markretrofitdemotwo.bean.BaseRequestBean;
+import com.mark.view.markretrofitdemotwo.bean.CreateAppBean;
+import com.mark.view.markretrofitdemotwo.bean.FemaleBean;
+import com.mark.view.markretrofitdemotwo.bean.MeiNvBean;
+import com.mark.view.markretrofitdemotwo.mvp.model.bean.BaseResultBean;
+import com.mark.view.markretrofitdemotwo.mvp.model.bean.IPAddressResultBean;
 
 import java.util.List;
 import java.util.Map;
@@ -34,7 +40,7 @@ public interface ApiService<T> {
      * 在网络请求接口的注解设置
      */
     @GET("ip/location?appkey=80985933997890df")
-    Call<BaseResultBean<ResultBean>> getIpAdress(@Query("ip") String ip);
+    Call<BaseResultBean<IPAddressResultBean>> getIpAdress(@Query("ip") String ip);
 
     @GET("meituApi")
     Call<BaseRequestBean<List<MeiNvBean>>> getMeiNv(@Query("page") int page);

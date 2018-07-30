@@ -8,6 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转MVP的演示"
+        android:onClick="goMVP"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="IP地址查询（Get请求）"

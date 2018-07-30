@@ -21,6 +21,7 @@
         <activity android:name=".ui.MeiNvActivity" />
         <activity android:name=".ui.FemaleActivity" />
         <activity android:name=".ui.CreateAppActivity"/>
+        <activity android:name=".ui.MVPActivity" />
     </application>
 
 </manifest>

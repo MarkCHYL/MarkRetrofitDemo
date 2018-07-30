@@ -12,6 +12,7 @@ import com.mark.view.markretrofitdemotwo.bean.BaseResultBean;
 import com.mark.view.markretrofitdemotwo.bean.ResultBean;
 import com.mark.view.markretrofitdemotwo.ui.CreateAppActivity;
 import com.mark.view.markretrofitdemotwo.ui.FemaleActivity;
+import com.mark.view.markretrofitdemotwo.ui.MVPActivity;
 import com.mark.view.markretrofitdemotwo.ui.MeiNvActivity;
 
 import retrofit2.Call;
@@ -67,5 +68,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void doCreateApp(View view){
         startActivity(new Intent(this, CreateAppActivity.class));
+    }
+
+    //别在意  MVP和retrofit的演示
+    public void goMVP(View view){
+        startActivity(new Intent(MainActivity.this, MVPActivity.class));
     }
 }

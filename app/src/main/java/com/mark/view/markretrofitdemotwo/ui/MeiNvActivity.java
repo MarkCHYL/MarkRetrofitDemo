@@ -22,6 +22,7 @@ import org.w3c.dom.Text;
 
 import java.util.List;
 
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -52,6 +53,7 @@ public class MeiNvActivity extends AppCompatActivity {
     }
 
     public void doShowMeiNv(View view) {
+
         //第4部分 访问api服务
         Call<BaseRequestBean<List<MeiNvBean>>> call = BaseRequest.getINSTANCE(this)
                 .doRequest().getMeiNv(1);
